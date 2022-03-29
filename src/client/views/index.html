@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Evaluate a news article or text with Aylient Natural Language Processing</title>
+</head>
+
+<body>
+
+    <header>
+        
+            <h1>Evaluate a News Article with Natural Language Processing</h1>
+      
+    </header>
+
+    <main>
+        <h1>Evaluate a news article or text with Natural Language Processing</h1><br>
+
+
+        <h2>Put in a "URL" to see what the Aylient NLP understands from it.</h2>
+
+
+        <section>
+            <form class="" onsubmit="return Client.handleSubmit(event)">
+                <input id="name" type="url" name="test-url" value=""
+                    placeholder="https://www.news-source/a-news-article...">
+                <input type="submit" name="" value="Analyse" onclick="return Client.handleSubmit(event)"
+                    onsubmit="return Client.handleSubmit(event)">
+            </form>
+        </section>
+
+                <section class="results">
+                        <strong>Form Results:</strong>
+                        <div id="results"></div>
+                    </section>
+    </main>
+
+    <footer>
+        <h3>Udacity - 2022</h3>
+    </footer>
+
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+       </script>
+
+</body>
+
+</html>
